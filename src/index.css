@@ -5,12 +5,19 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  
+  /* I added this stuff. */
+  background-image: linear-gradient(#88abbc, #4f7a9d);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size:cover;
+  min-height: 100vh;
+  place-content: center;
+
 }
 
 a {
@@ -18,16 +25,9 @@ a {
   color: #646cff;
   text-decoration: inherit;
 }
+
 a:hover {
   color: #535bf2;
-}
-
-body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
 }
 
 h1 {
@@ -35,24 +35,18 @@ h1 {
   line-height: 1.1;
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
+ul button {
+  border-radius: 1vw;
+  border: 0.5vw solid transparent;
+  padding: 0.75vw;
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #1a1a1a;
+  background-color: transparent;
   cursor: pointer;
   transition: border-color 0.25s;
 }
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
+
 
 @media (prefers-color-scheme: light) {
   :root {
@@ -63,6 +57,44 @@ button:focus-visible {
     color: #747bff;
   }
   button {
-    background-color: #f9f9f9;
+    background-color: transparent;
   }
+}
+
+/* Hover and active effects for the nav buttons. */
+
+#vertical-nav button:hover {
+  box-shadow: 0vw 0vw 1.5vw aliceblue;
+  transition: all 0.3s;
+}
+
+#vertical-nav button:active {
+  background-color: aliceblue;
+  transition: all 0.1s;
+}
+
+/* Background, hover, and active styles for all custom buttons. */
+
+.custom-buttons {
+  background: #6f94b2;
+}
+
+.custom-buttons:hover {
+  background: #6da6d8;
+  transition: all 0.3s;
+}
+
+.custom-buttons:active {
+  background: #e1f1ff;
+  transition: all 0.1s;
+}
+
+/* Stylings for Input Boxes. */
+.input-boxes:hover {
+  box-shadow: 0vw 0vw 1.5vw aliceblue;
+  transition: all 0.3s;
+}
+
+.input-boxes:focus {
+  outline: transparent;
 }
