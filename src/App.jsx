@@ -1,4 +1,3 @@
-import NavBar from './components/NavBar'
 import LoginRegister from './components/LoginRegister'
 import './styles/App.css'
 

@@ -1,4 +1,3 @@
-import React from 'react'
 import NavButton from './NavButton'
 import CustomButton from './CustomButton'
 
