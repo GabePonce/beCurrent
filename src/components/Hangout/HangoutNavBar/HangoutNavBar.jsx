@@ -1,6 +1,4 @@
-import React from 'react'
-import CustomButton from './CustomButton'
-import NavButton from './NavButton'
+import CustomButton from '../../Customs/CustomButton'
 
 const HangoutNavBar = () => {
   return (

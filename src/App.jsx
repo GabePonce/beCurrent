@@ -1,5 +1,5 @@
-import LoginRegister from './components/LoginRegister'
-import './styles/App.css'
+import LoginRegister from './components/LoginRegister/LoginRegister'
+
 
 
 function App() {

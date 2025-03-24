@@ -1,7 +1,6 @@
-import React from 'react'
-import Login from './Login'
-import Register from './Register'
-import CustomButton from './CustomButton'
+import Login from './Login/Login'
+import Register from './Register/Register'
+import CustomButton from '../Customs/CustomButton'
 
 const LoginRegister = () => {
   return (

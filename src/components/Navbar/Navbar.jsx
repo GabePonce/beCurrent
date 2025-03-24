@@ -1,5 +1,5 @@
-import NavButton from './NavButton'
-import CustomButton from './CustomButton'
+import NavButton from './NavButtons/NavButton'
+import CustomButton from '../Customs/CustomButton'
 
 const Navbar = () => {
   return (
