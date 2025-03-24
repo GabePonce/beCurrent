@@ -1,0 +1,18 @@
+.custom-buttons {
+background: #6f94b2;
+font-size: 1.5em; 
+border: none;
+border-radius: 0.4vw;
+color: #ece9da;
+padding: 0.3em 1em; 
+}
+  
+.custom-buttons:hover {
+background: #6da6d8;
+transition: all 0.3s;
+}
+  
+.custom-buttons:active {
+background: #e1f1ff;
+transition: all 0.1s;
+}

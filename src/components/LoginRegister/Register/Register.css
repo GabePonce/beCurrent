@@ -1,0 +1,25 @@
+h2{
+    color: white; 
+    margin-Top: 3em; 
+    font-size: 2em;
+}
+
+.register-input-boxes{
+    border-radius: 10px;
+    border-color: transparent;
+    font-size: 1.5em; 
+    padding: 0.3em;
+
+    &.non-top{
+        margin-top: 1em
+    }
+}
+
+.register-input-boxes:hover {
+box-shadow: 0vw 0vw 1.5vw aliceblue;
+transition: all 0.3s;
+}
+
+.register-input-boxes:focus {
+outline: transparent;
+}

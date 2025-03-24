@@ -1,0 +1,55 @@
+#vertical-nav button:hover {
+box-shadow: 0vw 0vw 1.5vw aliceblue;
+transition: all 0.3s;
+}
+
+#vertical-nav button:active {
+background-color: aliceblue;
+transition: all 0.1s;
+}
+
+.navButtons {
+border-radius: 1vw;
+border: 0.5vw solid transparent;
+padding: 0.75vw;
+font-size: 1em;
+font-weight: 500;
+font-family: inherit;
+background-color: transparent;
+cursor: pointer;
+transition: border-color 0.25s;
+}
+
+.static-background {
+    width: 65%;
+    height: 100%;
+    display: flex; 
+    margin: auto;
+    position: relative;
+}
+
+#vertical-nav {
+    border-style: solid;
+    border-width: 0.5vw;
+    border-image: linear-gradient(45deg, #355975,rgb(100, 149, 189)) 1;
+    background-image: linear-gradient(#9dbdcd, #81a7ba);
+}
+
+#button-list {
+    padding-right: 0.5em; 
+    margin-left: -1.92em; 
+    list-style-type: none;
+}
+
+#break {
+    margin-top: 20vw;
+}
+
+#display-area {
+    background: #c1cdd6; 
+    width: 100%;
+    border-style: solid;
+    border-width: 0.5vw; 
+    border-image: linear-gradient(0deg, #355975,rgb(100, 149, 189)) 1;
+    border-left: 0;
+}

@@ -1,0 +1,39 @@
+#header-bar {
+display: grid;
+grid-template-columns: 75% 25%;
+font-size: 3vh;
+position: relative;
+left: 0;
+top: 0;
+width: 100%;
+height: 16%;
+text-align: left;
+padding: 0vh;
+color: #ece9da;
+border-style: solid;
+border-width: 0.5vw; 
+border-image: linear-gradient(0deg, #355975,rgb(100, 149, 189)) 1;
+border-left: 0;
+border-top: 0;
+border-right: 0;
+}
+
+#group-image {
+background: linear-gradient(to right, transparent, #6495bd), url('./bubAndNans.JPG') no-repeat center/cover;
+background-size:cover;
+background-repeat: no-repeat;
+}
+
+#dropdown-button-area {
+background-color: #6495bd;
+place-content: center;
+text-align: center;
+}
+
+#nav-options {
+background-color: #355975;
+height: 6vh;
+place-content: center;
+text-align: center;
+display: none;
+}

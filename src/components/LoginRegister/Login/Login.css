@@ -1,0 +1,25 @@
+#title {
+color: white;
+margin-top: 3em;
+font-size: 2em;
+}
+
+.login-input-boxes {
+border-radius: 10px; 
+border-color: transparent; 
+font-size: 1.5em; 
+padding: 0.3em;
+}
+
+.login-input-boxes:hover {
+    box-shadow: 0vw 0vw 1.5vw aliceblue;
+    transition: all 0.3s;
+}
+
+.login-input-boxes:focus {
+    outline: transparent;
+}
+
+#password {
+margin-top: 1em;
+}

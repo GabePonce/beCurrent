@@ -1,14 +1,16 @@
 import React from 'react'
+import './CustomButton.css'
 
 interface Props {
   children: string;
   onClick: () => void;
-  style?: React.CSSProperties
+  style?: React.CSSProperties;
+  disable: boolean;
 }
 
-const CustomButton = ({children, onClick, style}: Props) => {
+const CustomButton = ({children, onClick, style, disable}: Props) => {
   return (
-    <button className="custom-buttons" style={{fontSize: "1.5em", border: "none", borderRadius: "0.4vw", color: "#ece9da", padding: "0.3em 1em", ...style}}>{children}</button>
+    <button className="custom-buttons" style={{...style}} disabled={disable}>{children}</button>
   )
 }
 

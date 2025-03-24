@@ -1,20 +1,23 @@
 import Login from './Login/Login'
 import Register from './Register/Register'
 import CustomButton from '../Customs/CustomButton'
+import './LoginRegister.css'
 
 const LoginRegister = () => {
   return (
     <>
-      <div id="static-background" style={{width: "80%", margin: "auto", position: "relative"}}>
-        <div id="display-area" style={{background: "#c1cdd6", width: "100%", borderStyle: "solid", borderWidth: "0.5vw", borderImage: "linear-gradient(0deg, #355975,rgb(100, 149, 189)) 1", display: "flex", flexDirection: "column", alignItems: "center"}}>
-        <img src="./src/assets/becurrent.png" style={{width: "50vh", height: "14vh", marginTop: "2em"}}/>
-        <div style={{display: "grid", gridTemplateColumns: "auto auto 50% auto auto", placeContent: "center", height: "50vh"}}>
+      <div className="static-background">
+        <div className="display-area">
+        <img src="./src/assets/becurrent.png"/>
+        <div className="container">
           <div id="spacer"></div>
-          <div style={{display: "flex", flexDirection: "column"}}>
+          <div className="formContainers">
             <Login></Login>
           </div>
-          <div id="spacer"></div>
-          <div style={{display: "flex", flexDirection: "column"}}>
+          <div id="spacer">
+            <div className="line"></div>
+          </div>
+          <div className="formContainers">
             <Register></Register>
           </div>
           <div id="spacer"></div>
