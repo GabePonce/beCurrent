@@ -90,11 +90,11 @@ ul button {
 }
 
 /* Stylings for Input Boxes. */
-.input-boxes:hover {
+.login-input-boxes:hover, .register-input-boxes:hover {
   box-shadow: 0vw 0vw 1.5vw aliceblue;
   transition: all 0.3s;
 }
 
-.input-boxes:focus {
+.login-input-boxes:focus, .register-input-boxes:focus {
   outline: transparent;
 }
