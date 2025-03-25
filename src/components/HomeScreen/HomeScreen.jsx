@@ -23,10 +23,13 @@ function HomeScreen() {
                         <li className= {selectedIndex === index ? 'hangouts active' : 'hangouts'}
                         key={hangout.id} 
                         onClick={() => { setSelectedIndex (index)}}>
-                            <h2>{hangout.name}</h2>
-                            <p>{hangout.description}</p>
+                            <div className="hangImg">
+                                <h2>{hangout.name}</h2>
+                                <p>{hangout.description}</p>
+                            </div>
                         </li>
                     ))}
+                    
                 </ul>
             </div>
         </>
