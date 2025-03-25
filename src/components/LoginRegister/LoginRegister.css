@@ -10,8 +10,8 @@
     align-items: center;
 }
 
-img{
-    width: 50vh; 
+.beCurrent-logo{
+    width: 50vw; 
     height: 14vh; 
     margin-top: 2em;
 }
