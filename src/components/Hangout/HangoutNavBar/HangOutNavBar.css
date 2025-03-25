@@ -6,7 +6,7 @@ position: relative;
 left: 0;
 top: 0;
 width: 100%;
-height: 16%;
+height: 16vh;
 text-align: left;
 padding: 0vh;
 color: #ece9da;
@@ -19,9 +19,7 @@ border-right: 0;
 }
 
 #group-image {
-background: linear-gradient(to right, transparent, #6495bd), url('./bubAndNans.JPG') no-repeat center/cover;
-background-size:cover;
-background-repeat: no-repeat;
+background: linear-gradient(to right, transparent, #6495bd), url('../../../assets/bubAndNans.JPG') no-repeat center/cover;
 }
 
 #dropdown-button-area {
@@ -32,8 +30,30 @@ text-align: center;
 
 #nav-options {
 background-color: #355975;
-height: 6vh;
+padding-bottom: 0.5vw;
 place-content: center;
 text-align: center;
 display: none;
+}
+
+#button-grid {
+display: flex;
+flex-direction: row;
+}
+
+#button-grid .custom-buttons {
+margin-left: 1vw;
+vertical-align: middle;
+}
+
+#hangout-header-text {
+margin-left: 1vw;
+}
+
+#hangout-title {
+font-size: 4.5vh;
+}
+
+#hangout-date {
+font-size: 2.5vh;
 }
