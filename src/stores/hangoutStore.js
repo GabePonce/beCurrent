@@ -33,6 +33,7 @@ export const useHangoutStore = create((set) => ({
                 const hangout = hangSnap.data()
 
                 //grabbing the users attending each hagnout
+                // *possibly add .array after attendees*
                 hangout.attendees.forEach(async (uId) => {
                     const uRef = doc(db,"users", uId)
 
