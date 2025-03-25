@@ -2,12 +2,13 @@
 .hang{
     display: flex;
     justify-content: center;
-    align-items: center;
-    padding: 2vh 2.5vw;
+    height: 100%;
+    box-sizing: border-box;
 }
 
+/* Hangout Image Styles */
 .hangImg{
-    width: 26vw;
+    width: 22vw;
     height: 16vh;
     object-fit: cover;
     background-position: center;
@@ -19,49 +20,46 @@
 
 /* List styles */
 ul {
+    overflow-y: auto;
+    scrollbar-width: thin;
     list-style-type: none;
     padding: 1vh;
-    margin: 1vh auto;
+    margin: 0;
     display: flex; 
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-items: center;
+    flex-flow: row wrap;
+    justify-content: center;
     gap: 1vh;
-    overflow-x: auto;
-    scrollbar-width: thin;
+    height: 45.5vh;
+    max-height: 45.5vh;
 }
 
 /* Hangout item styles */
-li.hangouts {
+li.hangouts, li.addHang {
     background-color: #355975;
     padding: .5vh;
     border-radius: 1vh;
     box-shadow: 0 .25vh 1vh rgba(0, 0, 0, 0.15);
     cursor: pointer;
     transition: all 0.3s ease;
-    flex: 0 1;
+    flex: 0 1 auto;
     display: flex;
     justify-content: center;
     color: white;
 }
 
-li.hangouts:hover {
+li.hangouts:hover, li.addHang:hover {
     background-color: #4A7BAb;
     transform: translateY(-0.5vh);
     box-shadow: 0 0.5vh 1.5vh rgba(0, 0, 0, 0.2);
 }
 
 /* Active hangout item styles */
-li.hangouts.active {
+li.hangouts.active, li.addHang.active {
     background-color: #007bff;
     transform: translateY(-0.5vh);
     box-shadow: 0 0.5vh 1vh rgba(0, 123, 255, 0.3);
 }
 
-li.hangouts.active h2,
-li.hangouts.active p {
-    color: #fff;
-}
 
 /* Text styles */
 h2 {
@@ -74,4 +72,19 @@ h2 {
 p {
     margin: 5px 0 0;
     color: #666;
+}
+
+li.hangouts.active h2,
+li.hangouts.active p {
+    color: #fff;
+}
+
+/* Add hangout item styles */
+.addHang {
+    font-size: 1.5em;
+    font-weight: 700;
+    align-items: center;
+    text-align: center;
+    width: 22vw;
+    height: 16vh;
 }

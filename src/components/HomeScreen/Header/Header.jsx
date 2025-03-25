@@ -3,7 +3,7 @@ import './Header.css'
 
 function Header() {
     return (
-        <div><h1>HANGOUTS</h1></div>
+        <div id='header'><h1>HANGOUTS</h1></div>
     );
 }
 

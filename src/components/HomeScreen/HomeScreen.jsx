@@ -8,7 +8,13 @@ function HomeScreen() {
         {id: 1, name: "Hangout 1", description: "This is the first hangout"},
         {id: 2, name: "Hangout 2", description: "This is the second hangout"},
         {id: 3, name: "Hangout 3", description: "This is the third hangout"},
-        {id: 4, name: "New Hangout", description: "+"}
+        {id: 4, name: "Hangout 3", description: "This is the third hangout"},
+        {id: 5, name: "Hangout 3", description: "This is the third hangout"},
+        {id: 6, name: "Hangout 3", description: "This is the third hangout"},
+        {id: 7, name: "Hangout 3", description: "This is the third hangout"},
+        {id: 8, name: "Hangout 3", description: "This is the third hangout"},
+        {id: 9, name: "Hangout 3", description: "This is the third hangout"},
+        {id: 10, name: "Hangout 3", description: "This is the third hangout"}
     ];
     const [selectedIndex, setSelectedIndex] = useState(-1);
 
@@ -29,7 +35,11 @@ function HomeScreen() {
                             </div>
                         </li>
                     ))}
-                    
+                    <li className="addHang">
+                        <div>
+                            <p>+</p>
+                        </div>
+                    </li>
                 </ul>
             </div>
         </>

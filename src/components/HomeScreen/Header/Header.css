@@ -3,8 +3,13 @@ h1 {
     text-align: center;
     color: white;
     font-size: 5.5vh;
-    margin: 0vh;
+    margin: auto;
     padding: 3vh;
     background-color: #62a4f8;
     box-shadow: 0 .5vh .6vh rgba(0, 0, 0, 0.1);
+    align-self: center;
+}
+
+#header {
+    align-items: center;
 }
