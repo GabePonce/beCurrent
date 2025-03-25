@@ -85,9 +85,6 @@ const MessagingText = () => {
                 value={text}
                 onChange={e=>setText(e.target.value)}
             />
-            <div className="emoji">
-                <img src="./emoji.png" alt="" />
-            </div>
             <button className="sendButton" onClick={handleSend}> Send</button>
         </div>
     </div>
