@@ -1,4 +1,6 @@
 import NavButton from './NavButtons/NavButton'
+import Header from '../HomeScreen/Header/Header'
+import HomeScreen from '../HomeScreen/HomeScreen'
 import './NavBar.css'
 import { auth } from '../../config/firebase'
 
@@ -15,6 +17,8 @@ const Navbar = () => {
           </ol>
         </div>
         <div id="display-area">
+          <Header></Header>
+          <HomeScreen></HomeScreen>
         </div>
       </div>
     </>

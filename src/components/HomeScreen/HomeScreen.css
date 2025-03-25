@@ -1,0 +1,58 @@
+/* General styles */
+.hang{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5vh;
+}
+
+/* List styles */
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: .5em auto;
+    max-width: 100%;
+    height: 10em;
+    display: flex; 
+    flex-direction: row;
+    justify-items: center;
+    gap: .25em; 
+}
+
+/* Hangout item styles */
+li.hangouts {
+    background-color: #fff;
+    margin: 0; 
+    padding: 2em;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+li.hangouts:hover {
+    background-color: #f9f9f9;
+}
+
+/* Active hangout item styles */
+li.hangouts.active {
+    background-color: #007bff;
+    color: #fff;
+}
+
+li.hangouts.active h2,
+li.hangouts.active p {
+    color: #fff;
+}
+
+/* Text styles */
+h2 {
+    margin: 0;
+    font-size: 1.5em;
+    color: #333;
+}
+
+p {
+    margin: 5px 0 0;
+    color: #666;
+}

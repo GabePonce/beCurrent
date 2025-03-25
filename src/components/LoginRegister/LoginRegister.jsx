@@ -8,7 +8,7 @@ const LoginRegister = () => {
     <>
       <div className="static-background">
         <div className="display-area">
-        <img className="beCurrentLogo" src="./src/assets/becurrent.png"/>
+        <img className="beCurrent-Logo" src="./src/assets/becurrent.png"/>
         <div className="container">
           <div id="spacer"></div>
           <div className="formContainers">
