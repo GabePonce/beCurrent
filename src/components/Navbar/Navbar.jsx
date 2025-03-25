@@ -12,8 +12,8 @@ const Navbar = () => {
           <ol id="button-list">
             <li><NavButton>home.png</NavButton></li>
             <li><NavButton>box.png</NavButton></li>
-            <li id="break"><NavButton>profile.png</NavButton></li>
-            <li><NavButton onClick={()=>auth.signOut()}>settings.png</NavButton></li>
+            <li id="break"><NavButton onClick={()=>auth.signOut()}>logout.png</NavButton></li>
+            <li><NavButton>settings.png</NavButton></li>
           </ol>
         </div>
         <div id="display-area">
