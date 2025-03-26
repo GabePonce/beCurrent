@@ -26,7 +26,7 @@ function HomeScreen() {
             <div className="hang">
                 <ul>
                     {hangouts.map((hangout, index) => (
-                        <li className= {selectedIndex === index ? 'hangouts active' : 'hangouts'}
+                        <li className= {selectedIndex === index ? 'hangouts' : 'hangouts'}
                         key={hangout.id} 
                         onClick={() => { setSelectedIndex (index)}}>
                             <div className="hangImg">
@@ -36,8 +36,8 @@ function HomeScreen() {
                         </li>
                     ))}
                     <li className="addHang">
-                        <div>
-                            <p>+</p>
+                        <div className="addHangTxt">
+                            <span>+</span>
                         </div>
                     </li>
                 </ul>

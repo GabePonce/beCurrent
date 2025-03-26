@@ -53,30 +53,22 @@ li.hangouts:hover, li.addHang:hover {
     box-shadow: 0 0.5vh 1.5vh rgba(0, 0, 0, 0.2);
 }
 
-/* Active hangout item styles */
-li.hangouts.active, li.addHang.active {
-    background-color: #007bff;
-    transform: translateY(-0.5vh);
-    box-shadow: 0 0.5vh 1vh rgba(0, 123, 255, 0.3);
-}
-
-
 /* Text styles */
 h2 {
-    text-align: bottom;
+    position: relative;
+    left: .5vw;
+    top: 9vh;
     margin: 0;
     font-size: 1.5em;
-    color: #333;
+    color: white;
 }
 
 p {
-    margin: 5px 0 0;
-    color: #666;
-}
-
-li.hangouts.active h2,
-li.hangouts.active p {
-    color: #fff;
+    position: relative;
+    left: .5vw;
+    top: 9vh;
+    margin: 0;
+    font-size: 1em;
 }
 
 /* Add hangout item styles */
@@ -87,4 +79,17 @@ li.hangouts.active p {
     text-align: center;
     width: 22vw;
     height: 16vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.addHangTxt {
+    position: relative;
+    top: -3vh;
+    font-size: 10em;
+    color: rgba(255, 255, 255, 0.432);
+    line-height: 1;
+    margin: 0;
+    overflow: hidden;
 }
