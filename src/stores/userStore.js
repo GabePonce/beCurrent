@@ -15,24 +15,24 @@ export const useUserStore = create ((set)=>({
     fetchUserInfo: async (uId) => {
         if (!uId) return set({currentUser:null, isLoading:false})
 
-            try {
-                // grab the current user
-                const docRef = doc(db, "users", uId)
+        try {
+            // grab the current user
+            const docRef = doc(db, "users", uId)
 
-                const docSnap = await getDoc(docRef)
+            const docSnap = await getDoc(docRef)
 
-                //set if a user is found
-                if (docSnap.exists()){
-                    set({currentUser: docSnap.data(), isLoading: false})
-                }else{
-                    set({currentUser:null, isLoading:false})
-                }
-
-
-            } catch (err) {
-                // remove this later -- dev debugging
-                console.log(err)
-                return set({currentUser: null, isLoading:false})
+            //set if a user is found
+            if (docSnap.exists()){
+                set({currentUser: docSnap.data(), isLoading: false})
+            }else{
+                set({currentUser:null, isLoading:false})
             }
+
+
+        } catch (err) {
+            // remove this later -- dev debugging
+            console.log(err)
+            return set({currentUser: null, isLoading:false})
+        }
     }
 }))
