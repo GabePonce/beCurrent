@@ -10,7 +10,7 @@ interface Props {
 
 const CustomButton = ({children, onClick, style, disable}: Props) => {
   return (
-    <button className="custom-buttons" style={{...style}} disabled={disable}>{children}</button>
+    <button onClick={onClick} className="custom-buttons" style={{...style}} disabled={disable}>{children}</button>
   )
 }
 
