@@ -10,15 +10,17 @@ const Navbar = () => {
       <div className="static-background">
         <div id="vertical-nav">
           <ol id="button-list">
-            <li><NavButton>home.png</NavButton></li>
-            <li><NavButton>box.png</NavButton></li>
-            <li id="break"><NavButton onClick={()=>auth.signOut()}>logout.png</NavButton></li>
-            <li><NavButton>settings.png</NavButton></li>
+            <li id="topBtn1"><NavButton>home.png</NavButton></li>
+            <li id="topBtn2"><NavButton>box.png</NavButton></li>
+            <li id="bottomBtn1"><NavButton onClick={()=>auth.signOut()}>logout.png</NavButton></li>
+            <li id="bottomBtn2"><NavButton>settings.png</NavButton></li>
           </ol>
         </div>
         <div id="display-area">
-          <Header></Header>
-          <HomeScreen></HomeScreen>
+          <div id="display-area-border">
+            <Header></Header>
+            <HomeScreen></HomeScreen>
+          </div>
         </div>
       </div>
     </>

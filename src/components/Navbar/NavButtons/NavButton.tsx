@@ -9,7 +9,7 @@ interface Props {
 const NavButton = ({children, onClick}: Props) => {
   return (
     <>
-      <button className='navButtons' onClick={onClick}><img src={"./src/assets/" + children} width="32vw" height="32vw"/></button>
+      <button className='navButtons' onClick={onClick}><img className='navImg' src={"./src/assets/" + children}/></button>
     </>
   )
 }

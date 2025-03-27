@@ -1,5 +1,5 @@
 /* General styles */
-.hang{
+.hangoutScreen {
     display: flex;
     justify-content: center;
     height: 100%;
@@ -7,7 +7,7 @@
 }
 
 /* Hangout Image Styles */
-.hangImg{
+.hangImg {
     width: 22vw;
     height: 16vh;
     object-fit: cover;
@@ -19,18 +19,16 @@
 }
 
 /* List styles */
-ul {
+.hangList {
     overflow-y: auto;
     scrollbar-width: thin;
     list-style-type: none;
-    padding: 1vh;
+    padding-top: 11vh;
     margin: 0;
     display: flex; 
     flex-flow: row wrap;
     justify-content: center;
     gap: 1vh;
-    height: 45.5vh;
-    max-height: 45.5vh;
 }
 
 /* Hangout item styles */
@@ -54,26 +52,26 @@ li.hangouts:hover, li.addHang:hover {
 }
 
 /* Text styles */
-h2 {
+.hangoutName {
     position: relative;
     left: .5vw;
     top: 9vh;
     margin: 0;
-    font-size: 1.5em;
+    font-size: 1.5rem;
     color: white;
 }
 
-p {
+.hangoutDes {
     position: relative;
     left: .5vw;
     top: 9vh;
     margin: 0;
-    font-size: 1em;
+    font-size: 1rem;
 }
 
 /* Add hangout item styles */
 .addHang {
-    font-size: 1.5em;
+    font-size: 1.5rem;
     font-weight: 700;
     align-items: center;
     text-align: center;

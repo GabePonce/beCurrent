@@ -1,15 +1,19 @@
 /* Header styles */
-h1 {
+#headerTxt {
     text-align: center;
     color: white;
-    font-size: 5.5vh;
+    font-size: 4.5vw;
     margin: auto;
-    padding: 3vh;
+    padding: 1vh;
     background-color: #62a4f8;
     box-shadow: 0 .5vh .6vh rgba(0, 0, 0, 0.1);
     align-self: center;
 }
 
 #header {
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    width: 100%;
     align-items: center;
 }

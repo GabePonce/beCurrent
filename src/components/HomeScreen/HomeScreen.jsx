@@ -23,15 +23,15 @@ function HomeScreen() {
             {/* If there are no hangouts */}
             {hangouts.length === 0 && <div></div>}
             {/* Display hangouts as a list */}
-            <div className="hang">
-                <ul>
+            <div className="hangoutScreen">
+                <ul className="hangList">
                     {hangouts.map((hangout, index) => (
                         <li className= {selectedIndex === index ? 'hangouts' : 'hangouts'}
                         key={hangout.id} 
                         onClick={() => { setSelectedIndex (index)}}>
                             <div className="hangImg">
-                                <h2>{hangout.name}</h2>
-                                <p>{hangout.description}</p>
+                                <h2 className='hangoutName'>{hangout.name}</h2>
+                                <p className='hangoutDes'>{hangout.description}</p>
                             </div>
                         </li>
                     ))}
