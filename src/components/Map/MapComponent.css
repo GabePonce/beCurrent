@@ -1,0 +1,81 @@
+#map-title,
+#add-address-title,
+#address-list-title,
+#calc-route-title {
+    color: #355975;
+}
+
+
+#address-ul {
+    display: grid;
+    grid-template-columns: 100%;
+    width: 30vw;
+    height: 10vw;
+    overflow-y: auto;
+    list-style: none;
+}
+
+.address-list-contents {
+    display: grid;
+    grid-template-columns: 90% 10%;
+}
+
+.address-list-item-text {
+    font-weight: 500;
+    font-size: 2vh;
+    color:#223b4e;
+}
+
+#back-arrow {
+    border-radius: 1vw;
+    border: 0.5vw solid transparent;
+    padding: 0.75vw;
+    background-color: transparent;
+    cursor: pointer;
+    padding-left: 5.5vw;
+
+    img {
+        width: 1.5vw;
+        height: auto;
+    }
+}
+
+#remove-address {
+    border: none;
+    font-size: 2.5vh;
+    font-weight: 600;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+#remove-address:hover {
+    color: rgb(206, 0, 0);
+    transition: all 0.2s;
+}
+
+#view-addresses {
+    display: grid;
+    grid-template-columns: 65% 35%;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    justify-content: center;
+    box-sizing: border-box;
+    padding-left: 5.5vw;
+    overflow-y: auto;
+}
+
+#address-list-title {
+    font-size: 2.5vh;
+}
+
+#map-screen {
+    text-align: center;
+    padding-left: 5.5vw;
+}
+
+#map {
+    margin: 1vh auto 1vh auto;
+    width: 50%;
+    border: 0.5vw solid #355975;
+}
+

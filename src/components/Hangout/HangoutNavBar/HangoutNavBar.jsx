@@ -23,7 +23,7 @@ const displayNavOptions = () => {
 }
 
 // Set the name of the image for the hangout here.
-var backgroundImageName = "bubAndNans.JPG";
+var backgroundImageName = "lake.jpg";
 
 
 const HangoutNavBar = () => {
@@ -47,6 +47,7 @@ const HangoutNavBar = () => {
           <div id="button-grid">
             <CustomButton>Info</CustomButton>
             <CustomButton>List</CustomButton>
+            <CustomButton>Map</CustomButton>
             <div id="settings"><CustomButton>Settings</CustomButton></div>
           </div>
         </div>

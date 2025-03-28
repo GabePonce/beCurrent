@@ -64,7 +64,7 @@ transition: all 0.1s;
 }
 
 #display-area-border {
-    position: absolute;
+    /* position: absolute; */
     top: 0;
     z-index: 1.5;
     box-sizing: border-box;
