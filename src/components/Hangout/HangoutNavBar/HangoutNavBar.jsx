@@ -46,8 +46,10 @@ const HangoutNavBar = () => {
         <div id="nav-options">
           <div id="button-grid">
             <CustomButton>Info</CustomButton>
+            <CustomButton>Chat</CustomButton>
             <CustomButton>List</CustomButton>
             <CustomButton>Map</CustomButton>
+            <div id="photos"><CustomButton>Photos</CustomButton></div>
             <div id="settings"><CustomButton>Settings</CustomButton></div>
           </div>
         </div>

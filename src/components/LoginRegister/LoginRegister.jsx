@@ -22,7 +22,7 @@ const LoginRegister = () => {
           </div>
           <div id="spacer"></div>
           </div>
-          <CustomButton style={{margin: "10vh 1vw 4vh 1vw"}}>Forgot Password?</CustomButton>
+          <CustomButton style={{margin: "5vh 1vw 4vh 1vw"}}>Forgot Password?</CustomButton>
         </div>
       </div>
     </>

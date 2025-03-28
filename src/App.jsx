@@ -21,7 +21,7 @@ function App() {
   }, [fetchUserInfo])
 
 
-  if (isLoading) return <div className="loading">loading...</div>
+  if (isLoading) return <div className="loading">Loading...</div>
 
 
   return (

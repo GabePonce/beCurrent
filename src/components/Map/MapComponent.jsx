@@ -62,7 +62,7 @@ const ViewAddresses = ({ navigate }) => (
       <div id="calc-route-section">
         <h3 id="calc-route-title">Calculate Route</h3>
         <div id="point-a">
-          <label for="point-a-address-list">Point A:</label>
+          <label for="point-a-address-list" id="a-label">Point A:</label>
           <select name="point-a-address-list" id="select-address-list-a" onChange={showCalculate}>
             <option value="..." selected>...</option>
             {addresses.map((address) => (
@@ -71,7 +71,7 @@ const ViewAddresses = ({ navigate }) => (
           </select>
         </div>
         <div id="point-b">
-          <label for="point-b-address-list">Point B:</label>
+          <label for="point-b-address-list" id="b-label">Point B:</label>
           <select name="point-b-address-list" id="select-address-list-b" onChange={showCalculate}>
             <option value="..." selected>...</option>
             {addresses.map((address) => (

@@ -5,14 +5,16 @@
     color: #355975;
 }
 
-
 #address-ul {
     display: grid;
     grid-template-columns: 100%;
     width: 30vw;
-    height: 10vw;
+    height: 43.5vh;
     overflow-y: auto;
     list-style: none;
+    margin-left: -2vw;
+    position: absolute;
+    justify-self: center;
 }
 
 .address-list-contents {
@@ -23,21 +25,23 @@
 .address-list-item-text {
     font-weight: 500;
     font-size: 2vh;
-    color:#223b4e;
+    color: #223b4e;
 }
 
 #back-arrow {
     border-radius: 1vw;
     border: 0.5vw solid transparent;
-    padding: 0.75vw;
     background-color: transparent;
     cursor: pointer;
     padding-left: 5.5vw;
+    margin-top: 0.2vw;
 
     img {
         width: 1.5vw;
         height: auto;
     }
+
+    position: absolute;
 }
 
 #remove-address {
@@ -58,6 +62,7 @@
     grid-template-columns: 65% 35%;
     margin-left: 1vw;
     margin-right: 1vw;
+    margin-top: 2vw;
     justify-content: center;
     box-sizing: border-box;
     padding-left: 5.5vw;
@@ -79,3 +84,25 @@
     border: 0.5vw solid #355975;
 }
 
+#calc-route-title {
+    font-size: 2.5vh;
+}
+
+#a-label,
+#b-label,
+#select-address-list-a,
+#select-address-list-b {
+    font-size: 2vh;
+}
+
+#add-new-address-button {
+    font-size: 2vh;
+    border: none;
+    height: 3vh;
+    width: 10vw;
+}
+
+#select-address-list-a, #select-address-list-b {
+    appearance: none;
+    border: none;
+}
